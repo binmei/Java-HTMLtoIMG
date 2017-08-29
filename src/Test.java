@@ -5,18 +5,18 @@ public class Test {
 
     public static void main(String[] args) {
         HtmlImageGenerator imageGenerator = new HtmlImageGenerator(); 
-        imageGenerator.loadHtml("<table id=\"EmailWrapper\" style=\"max-width: 430px; width: 430px; font-family: arial; font-size: 13.5pt;\" align=\"center\">\r\n" + 
+        imageGenerator.loadHtml("<table id=\"EmailWrapper\" style=\"max-width: 400px; width: 400px; font-family: arial; font-size: 13.5pt;\" align=\"center\">\r\n" + 
                 "<tbody>\r\n" + 
                 "<tr>\r\n" + 
                 "<td>\r\n" + 
-                "<table style=\"max-width: 580px;\" align=\"center\">\r\n" + 
+                "<table style=\"max-width: 580px; border-collapse: collapse;\" align=\"center\">\r\n" + 
                 "<tbody>\r\n" + 
                 "<tr>\r\n" + 
                 "<td>\r\n" + 
                 "<table style=\"max-width: 580px; width: 100%; height: 100%;\">\r\n" + 
                 "<tbody>\r\n" + 
                 "<tr style=\"width: 580px; height: 100px;\">\r\n" + 
-                "<td style=\"width: 100%; height: 100%; text-decoration: none;\"><a style=\"text-decoration: none;\" href=\"https://www.comcasttechnologysolutions.com/\"><img style=\"align: baseline;\" title=\"\" src=\"http://support.theplatform.com/sn_img/cts-logo-stacked-580x100.png\" alt=\"Comcast Technology Solutions\" width=\"580\" height=\"100\" align=\"bottom\" hspace=\"\" vspace=\"\" /> </a></td>\r\n" + 
+                "<img style=\"align: baseline;\" title=\"\" src=\"http://support.theplatform.com/sn_img/cts-logo-stacked-580x100.png\" alt=\"Comcast Technology Solutions\" width=\"580\" height=\"100\" align=\"bottom\"/>\r\n" + 
                 "</tr>\r\n" + 
                 "</tbody>\r\n" + 
                 "</table>\r\n" + 
@@ -51,7 +51,7 @@ public class Test {
                 "<tr align=\"left\">\r\n" + 
                 "<td>\r\n" + 
                 "<table style=\"table-layout: fixed; width: 100%; height: 100%; padding-left: 8px;\">\r\n" + 
-                "<tbody>\r\n" +
+                "<tbody>\r\n" + 
                 "<tr>\r\n" + 
                 "<td style=\"width: 30%;\">\r\n" + 
                 "<p style=\"font-weight: bold; font-size: 11pt; color: #505050;\">Maintenance Begins:</p>\r\n" + 
@@ -162,7 +162,7 @@ public class Test {
                 "</td>\r\n" + 
                 "</tr>\r\n" + 
                 "</tbody>\r\n" + 
-                "</table>"); 
+                "</table>");
         imageGenerator.saveAsImage("hello-world3.png"); 
 
         System.out.println(imageGenerator.getSize());
